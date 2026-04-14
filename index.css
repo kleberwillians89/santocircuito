@@ -1070,7 +1070,7 @@ body.modal-open {
     max-width: 320px;
     height: auto;
   }
-  
+
   .hero-button,
   .evento-btn,
   .santos-button,
@@ -1105,7 +1105,7 @@ body.modal-open {
   }
 
   .evento-btn {
-    bottom: -16px;
+    bottom: -12px;
   }
 
   .eventos-info {

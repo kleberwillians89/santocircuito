@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santo Circuito</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <section class="hero" data-section="hero">
+    <div class="container">
+      <header class="hero-header reveal">
+        <nav class="hero-nav">
+          <a href="#eventos" data-track="nav_click" data-section="hero" data-label="eventos">Eventos</a>
+          <a href="#santos" data-track="nav_click" data-section="hero" data-label="santos_homenageados">Santos homenageados</a>
+          <a href="#participar" data-track="nav_click" data-section="hero" data-label="quero_participar">Quero participar</a>
+        </nav>
+      </header>
+
+      <div class="hero-grid">
+        <div class="hero-left reveal-left">
+          <h1 class="hero-title">
+            ONDE A FÉ E<br>
+            O ESPORTE<br>
+            ANDAM<br>
+            JUNTOS
+          </h1>
+
+          <a
+            href="#participar"
+            class="hero-button"
+            data-track="cta_click"
+            data-section="hero"
+            data-label="faca_parte_hero"
+          >
+            FAÇA PARTE
+          </a>
+        </div>
+
+        <div class="hero-right reveal-right">
+          <img
+            src="assets/logo.png"
+            alt="Logo Santo Circuito"
+            class="hero-logo"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="eventos" id="eventos" data-section="eventos">
+    <div class="container">
+      <h2 class="eventos-title reveal">PRÓXIMOS EVENTO</h2>
+
+      <div class="eventos-cards">
+        <article class="evento-card reveal-left">
+          <img src="assets/corrida-saopedro.png" alt="Corrida de São Pedro" class="evento-img" />
+          <a
+            href="https://www.ticketsimples.com/ingressos/1-corrida-de-sao-pedro-2026"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="evento-btn"
+            data-track="cta_click"
+            data-section="eventos"
+            data-label="comprar_ingresso_corrida_sao_pedro"
+          >
+            COMPRAR INGRESSO
+          </a>
+        </article>
+
+        <article class="evento-card evento-card-rali reveal-right">
+          <img src="assets/ralipesca-saopedro.png" alt="Rali de pesca de São Pedro" class="evento-img" />
+          <a
+            href="https://www.ticketsimples.com/ingressos/santo-circuito-rali-de-pesca-solidaria"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="evento-btn"
+            data-track="cta_click"
+            data-section="eventos"
+            data-label="comprar_ingresso_rali_pesca"
+          >
+            COMPRAR INGRESSO
+          </a>
+        </article>
+      </div>
+
+      <div class="eventos-info">
+        <article class="info-card reveal reveal-delay-1">
+          <img src="assets/mapa_brasil.png" alt="Impacto nacional" class="info-icon" />
+          <div class="info-text">
+            <h3>Impacto nacional</h3>
+            <ul>
+              <li>Grande público</li>
+              <li>Para toda a família</li>
+              <li>Compromisso ambiental</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="info-card reveal reveal-delay-2">
+          <img src="assets/familiabrasil.png" alt="Público" class="info-icon" />
+          <div class="info-text">
+            <h3>Público</h3>
+            <ul>
+              <li>Família</li>
+              <li>Valores e união</li>
+              <li>Turismo de fé</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="info-card reveal reveal-delay-3">
+          <img src="assets/patrocinio.png" alt="Marcas e parcerias" class="info-icon" />
+          <div class="info-text">
+            <h3>Marcas e parcerias</h3>
+            <ul>
+              <li>Bem estar integral</li>
+              <li>Desafio e conquista</li>
+              <li>Inovação e luz</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="santos" id="santos" data-section="santos">
+    <div class="container santos-container">
+      <h2 class="santos-title reveal">SANTOS HOMENAGEADOS</h2>
+
+      <div class="santos-grid">
+        <article class="santo-card santo-card-blue reveal reveal-delay-1">
+          <div class="santo-avatar-wrap santo-glow">
+            <img src="assets/S_Pedro.jpg" alt="São Pedro" class="santo-avatar" />
+          </div>
+
+          <div class="santo-content">
+            <h3>São Pedro</h3>
+            <p>
+              São Pedro era pescador, alguém acostumado ao esforço diário,
+              à paciência do mar e à incerteza das redes. Foi justamente ali,
+              na rotina simples da pesca, que Jesus o chamou para algo maior:
+              “ser pescador de homens”.
+            </p>
+          </div>
+        </article>
+
+        <article class="santo-card santo-card-yellow reveal reveal-delay-2">
+          <div class="santo-avatar-wrap">
+            <img src="assets/santaluzia.jpg" alt="Santa Luzia" class="santo-avatar" />
+          </div>
+
+          <div class="santo-content">
+            <h3>Santa Luzia</h3>
+            <p>
+              Santa Luzia carrega no próprio nome o seu significado: luz.
+              Diz a tradição que ela perdeu a visão, mas nunca perdeu a clareza.
+              Pelo contrário, tornou-se símbolo de quem ilumina caminhos,
+              mesmo na escuridão.
+            </p>
+          </div>
+        </article>
+
+        <article class="santo-card santo-card-red reveal reveal-delay-3">
+          <div class="santo-avatar-wrap">
+            <img src="assets/sao-jorge.jpeg" alt="São Jorge" class="santo-avatar" />
+          </div>
+
+          <div class="santo-content">
+            <h3>São Jorge</h3>
+            <p>
+              São Jorge é símbolo de coragem em movimento. Um guerreiro que
+              não recua diante do desafio. Mais do que uma batalha física,
+              sua história representa o enfrentamento do medo, das dúvidas
+              e das forças que tentam paralisar.
+            </p>
+          </div>
+        </article>
+
+        <article class="santo-card santo-card-brown reveal reveal-delay-4">
+          <div class="santo-avatar-wrap">
+            <img src="assets/sao_francisco.jpg" alt="São Francisco" class="santo-avatar" />
+          </div>
+
+          <div class="santo-content">
+            <h3>São Francisco</h3>
+            <p>
+              São Francisco é a leveza em movimento. Enquanto muitos avançam
+              pela força, ele segue pela simplicidade. Sua caminhada é marcada
+              pela conexão com a natureza, com os animais, com tudo que vive.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <div class="santos-cta reveal">
+        <a
+          href="#participar"
+          class="santos-button"
+          data-track="cta_click"
+          data-section="santos"
+          data-label="faca_parte_santos"
+        >
+          FAÇA PARTE
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="corrida-fe" id="corrida-fe" data-section="corrida_fe">
+    <div class="container corrida-fe-grid">
+      <div class="corrida-fe-left reveal-left">
+        <h2 class="corrida-fe-title">CORRIDA E FÉ</h2>
+
+        <div class="corrida-fe-gallery">
+          <img src="assets/corrider1.png" alt="Corredor se preparando" class="corrida-fe-img">
+          <img src="assets/corredor.png" alt="Corredor em movimento" class="corrida-fe-img">
+        </div>
+
+        <img src="assets/logo.png" alt="Logo Santo Circuito" class="corrida-fe-logo">
+      </div>
+
+      <div class="corrida-fe-right reveal-right">
+        <div class="corrida-fe-text">
+          <p>
+            Correr é um ato físico. Mas também é fé.
+            Você começa sem garantia. O percurso nem sempre é claro.
+            O corpo cansa antes da linha de chegada aparecer. E ainda assim, você continua.
+          </p>
+
+          <p>
+            A corrida ensina o que a fé exige: constância.
+            <strong>Um passo de cada vez, mesmo quando não dá.</strong>
+            Mesmo quando parece que não vai.
+          </p>
+
+          <p>
+            Tem dias de força. Tem dias de dúvida. Mas o movimento é o que sustenta tudo.
+            Parar é o único jeito de não chegar.
+          </p>
+
+          <p>
+            No fim, correr é acreditar com o corpo.
+            <strong>É confiar que cada passo, mesmo pequeno, te leva mais perto de algo maior.</strong>
+          </p>
+        </div>
+
+        <div class="corrida-fe-actions">
+          <a
+            href="#"
+            class="corrida-fe-button"
+            id="btn-fotos"
+            data-track="cta_click"
+            data-section="corrida_fe"
+            data-label="acessar_fotos"
+          >
+            ACESSE FOTOS
+          </a>
+
+          <a
+            href="https://open.spotify.com/playlist/6yQCIbFJCjsGB3dfZeWGF3?si=kk6iOA1QQveyT1huY028xQ&pi=B3Z0SocVRZq_1&nd=1&dlsi=a61426eb78df4589"
+            class="corrida-fe-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-track="cta_click"
+            data-section="corrida_fe"
+            data-label="acessar_playlist_spotify"
+          >
+            ACESSE PLAYLISTS
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="parceiros" id="parceiros" data-section="parceiros">
+    <div class="container parceiros-container">
+      <h2 class="parceiros-title reveal">PATROCINADORES E PARCEIROS</h2>
+
+      <div class="parceiros-board reveal">
+        <div class="parceiros-group">
+          <p class="parceiros-label">PATROCINADORES OFICIAIS</p>
+
+          <div class="parceiros-grid parceiros-grid-small">
+            <a
+              href="https://www.instagram.com/valedoave/"
+              class="parceiro-item"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-track="partner_click"
+              data-section="parceiros"
+              data-label="vale_do_ave"
+            >
+              <img src="assets/vale_do_ave.png" alt="Vale do Ave">
+            </a>
+
+            <a
+              href="https://www.instagram.com/akana.noronha/"
+              class="parceiro-item"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-track="partner_click"
+              data-section="parceiros"
+              data-label="akana"
+            >
+              <img src="assets/akana_pousada.png" alt="Akana">
+            </a>
+          </div>
+        </div>
+
+        <div class="parceiros-divider"></div>
+
+        <div class="parceiros-group">
+          <p class="parceiros-label">POUSADA PARCEIRA</p>
+
+          <div class="parceiros-grid parceiros-grid-small">
+            <a
+              href="https://www.instagram.com/nannainoronha/"
+              class="parceiro-item"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-track="partner_click"
+              data-section="parceiros"
+              data-label="nannai_noronha"
+            >
+              <img src="assets/nannainoronha.png" alt="Nannai Noronha">
+            </a>
+          </div>
+        </div>
+
+        <div class="parceiros-divider"></div>
+
+        <div class="parceiros-group">
+          <p class="parceiros-label">EMPRESAS PARCEIRAS</p>
+
+          <div class="parceiros-grid parceiros-grid-small">
+            <a
+              href="https://www.divinapharma.com.br/"
+              class="parceiro-item"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-track="partner_click"
+              data-section="parceiros"
+              data-label="divina_pharma"
+            >
+              <img src="assets/divinapharma.png" alt="Divina Pharma">
+            </a>
+
+            <a
+              href="https://www.instagram.com/fishhunternoronha/"
+              class="parceiro-item"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-track="partner_click"
+              data-section="parceiros"
+              data-label="fish_hunter"
+            >
+              <img src="assets/fisherhunter.png" alt="Fish Hunter">
+            </a>
+
+            <a
+              href="https://www.instagram.com/mugo.ag/"
+              class="parceiro-item"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-track="partner_click"
+              data-section="parceiros"
+              data-label="mugo"
+            >
+              <img src="assets/MUGÔ_LOGO.png" alt="Mugô">
+            </a>
+          </div>
+        </div>
+
+        <div class="parceiros-divider"></div>
+
+        <div class="parceiros-group">
+          <p class="parceiros-label">APOIADORES INSTITUCIONAIS</p>
+
+          <div class="parceiros-grid parceiros-grid-small">
+            <a
+              href="https://www.instagram.com/areaimoveis/"
+              class="parceiro-item"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-track="partner_click"
+              data-section="parceiros"
+              data-label="area_imoveis"
+            >
+              <img src="assets/areaimovies.png" alt="Área">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="parceiros-cta reveal">
+        <a
+          href="https://wa.me/5581987889916?text=Quero%20ser%20um%20patrocinador%20do%20Santo%20Circuito"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="parceiros-button"
+          data-track="cta_click"
+          data-section="parceiros"
+          data-label="seja_um_patrocinador"
+        >
+          SEJA UM PATROCINADOR
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-form" id="participar" data-section="participar">
+    <div class="container cta-form-grid">
+      <div class="cta-left reveal-left">
+        <h2 class="cta-quote">
+          Tem gente que<br>
+          corre por tempo.<br>
+          Outros correm<br>
+          por algo maior.
+        </h2>
+
+        <p class="cta-subtitle">Faça parte!</p>
+
+        <div class="cta-socials">
+          <a
+            href="#"
+            aria-label="Instagram"
+            class="cta-social"
+            data-track="social_click"
+            data-section="participar"
+            data-label="instagram"
+          >
+            <img src="assets/instagram.png" alt="Instagram">
+          </a>
+        </div>
+      </div>
+
+      <div class="cta-right reveal-right">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+        <form
+          id="inscricaoForm"
+          class="cta-card"
+          action="https://script.google.com/macros/s/AKfycbypiOy9kVfKb7mwz-ap6FccfTdCsMm6BWE6HMOVFKDZBp34kN84VTS7aMtIsWP4YIWB2w/exec"
+          method="POST"
+          target="hidden_iframe"
+          data-track="form_submit"
+          data-section="participar"
+          data-label="formulario_inscricao"
+        >
+          <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail para contato</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label>Quais santos pretende homenagear?</label>
+
+            <label class="check-item">
+              <input type="checkbox" name="santos" value="São Jorge">
+              <span>São Jorge</span>
+            </label>
+
+            <label class="check-item">
+              <input type="checkbox" name="santos" value="Santa Luzia">
+              <span>Santa Luzia</span>
+            </label>
+
+            <label class="check-item">
+              <input type="checkbox" name="santos" value="São Pedro">
+              <span>São Pedro</span>
+            </label>
+
+            <label class="check-item">
+              <input type="checkbox" name="santos" value="São Francisco">
+              <span>São Francisco</span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <label>Qual prova é sua favorita?</label>
+
+            <label class="check-item">
+              <input type="checkbox" name="provas" value="5km">
+              <span>5km</span>
+            </label>
+
+            <label class="check-item">
+              <input type="checkbox" name="provas" value="10km">
+              <span>10km</span>
+            </label>
+
+            <label class="check-item">
+              <input type="checkbox" name="provas" value="15km">
+              <span>15km</span>
+            </label>
+
+            <label class="check-item">
+              <input type="checkbox" name="provas" value="21km">
+              <span>21km</span>
+            </label>
+
+            <label class="check-item">
+              <input type="checkbox" name="provas" value="35km">
+              <span>35km</span>
+            </label>
+
+            <label class="check-item">
+              <input type="checkbox" name="provas" value="42km">
+              <span>42km</span>
+            </label>
+          </div>
+
+          <button type="submit" class="cta-submit">Enviar</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <a
+    href="https://wa.me/5581986849060?text=Ol%C3%A1%2C%20quero%20tirar%20d%C3%BAvidas%20sobre%20o%20Santo%20Circuito."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Tire dúvidas no WhatsApp"
+    data-track="whatsapp_click"
+    data-section="floating_button"
+    data-label="tire_duvidas_whatsapp"
+  >
+    <img src="assets/whats_tira_duvidas.png" alt="WhatsApp" />
+  </a>
+
+  <div class="modal-overlay" id="modal-fotos">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Fechar">×</button>
+
+      <div class="modal-icon">📸</div>
+      <h3 class="modal-title">Fotos do evento</h3>
+      <p class="modal-text">
+        As fotos oficiais ficarão disponíveis após a realização do evento.
+      </p>
+
+      <button class="modal-action" id="modal-ok">Entendi</button>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="popup-envio">
+    <div class="modal-box">
+      <button class="modal-close" id="popup-envio-fechar" aria-label="Fechar">×</button>
+      <div class="modal-icon">✅</div>
+      <h3 class="modal-title">Inscrição enviada</h3>
+      <p class="modal-text">
+        Recebemos suas informações com sucesso. Em breve teremos mais novidades do Santo Circuito.
+      </p>
+      <button class="modal-action" id="popup-envio-ok">Entendi</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

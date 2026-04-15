@@ -596,7 +596,7 @@ a {
 }
 
 .corrida-fe-text {
-  color: #111;
+  color: var(--blue);
   font-size: 17px;
   line-height: 1.55;
   max-width: 700px;

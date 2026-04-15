@@ -83,6 +83,38 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
+function getStoredUtm() {
+  return JSON.parse(localStorage.getItem("utm_data") || "{}");
+}
+
+// Captura UTM da URL e salva apenas se existir
+(function () {
+  const params = new URLSearchParams(window.location.search);
+
+  const hasUtm =
+    params.get("utm_source") ||
+    params.get("utm_medium") ||
+    params.get("utm_campaign");
+
+  if (!hasUtm) return;
+
+  const utmData = {
+    utm_source: params.get("utm_source"),
+    utm_medium: params.get("utm_medium"),
+    utm_campaign: params.get("utm_campaign")
+  };
+
+  localStorage.setItem("utm_data", JSON.stringify(utmData));
+
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "utm_visit",
+    utm_source: utmData.utm_source,
+    utm_medium: utmData.utm_medium,
+    utm_campaign: utmData.utm_campaign
+  });
+})();
+
 if (form) {
   form.addEventListener("submit", function (e) {
     const nome = document.getElementById("nome").value.trim();
@@ -93,6 +125,19 @@ if (form) {
       formStatus.textContent = "Preencha nome e e-mail.";
       return;
     }
+
+    const utm = getStoredUtm();
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "form_submit",
+      section: "participar",
+      label: "formulario_inscricao",
+      text: "Enviar",
+      utm_source: utm.utm_source || null,
+      utm_medium: utm.utm_medium || null,
+      utm_campaign: utm.utm_campaign || null
+    });
 
     formStatus.textContent = "Enviando...";
     formularioEnviado = true;
@@ -131,4 +176,23 @@ const revealObserver = new IntersectionObserver(
 
 revealElements.forEach((element) => {
   revealObserver.observe(element);
+});
+
+// Tracking de cliques com data-track
+document.addEventListener("click", function (e) {
+  const el = e.target.closest("[data-track]");
+  if (!el) return;
+
+  const utm = getStoredUtm();
+
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: el.getAttribute("data-track"),
+    section: el.getAttribute("data-section"),
+    label: el.getAttribute("data-label"),
+    text: (el.innerText || "").trim(),
+    utm_source: utm.utm_source || null,
+    utm_medium: utm.utm_medium || null,
+    utm_campaign: utm.utm_campaign || null
+  });
 });

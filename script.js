@@ -196,3 +196,27 @@ document.addEventListener("click", function (e) {
     utm_campaign: utm.utm_campaign || null
   });
 });
+
+// Scroll tracking (25%, 50%, 75%, 100%)
+(function () {
+  let lastScroll = 0;
+
+  window.addEventListener("scroll", function () {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const scrollPercent = Math.round((scrollTop / docHeight) * 100);
+
+    const checkpoints = [25, 50, 75, 100];
+
+    checkpoints.forEach((point) => {
+      if (scrollPercent >= point && lastScroll < point) {
+        window.dataLayer.push({
+          event: "scroll_depth",
+          percent: point
+        });
+      }
+    });
+
+    lastScroll = scrollPercent;
+  });
+})();

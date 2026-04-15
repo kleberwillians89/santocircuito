@@ -126,7 +126,7 @@ a {
 }
 
 .hero-nav a {
-  color: #111;
+  color: var(--blue);
   font-size: 22px;
   font-style: italic;
   font-weight: 400;
